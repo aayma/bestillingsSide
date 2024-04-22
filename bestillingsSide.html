@@ -1,0 +1,123 @@
+<style>
+    ::backdrop
+
+    table{
+        border-collapse: collapse;
+    }
+
+    tr, td, th{
+        border: 1px solid black;
+        padding: 12px;
+
+    }
+
+    th{
+        background-color: palegreen;
+
+    }
+</style>
+
+<table>
+
+    <tr>
+        <th>
+            Matkasse
+        </th>
+        <th>
+            Pris 1-2 personer
+        </th>
+        <th>
+            Pris 3-4 personer
+        </th>
+    </tr>
+
+    <tr>
+        <td>
+            Vegansk
+        </td>
+        <td>
+            679 kr
+        </td>
+        <td>
+            979 kr
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            Vegetarian
+        </td>
+        <td>
+            679 kr
+        </td>
+        <td>
+            979 kr
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            Sjømat
+        </td>
+        <td>
+            879 kr
+        </td>
+        <td>
+            1179 kr
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            Kjøtt og fisk
+        </td>
+        <td>
+            879 kr
+        </td>
+        <td>
+            1179 kr
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            Familiekasse (barnevennelig)
+        </td>
+        <td>
+            779 kr
+        </td>
+        <td>
+            1079 kr
+        </td>
+    </tr>
+</table>
+
+<select id="matkasseValue">
+    <option value="vegansk">Vegansk</option>
+    <option value="vegetariansk">Vegatariansk</option>
+    <option value="sjomat">Sjømat</option>
+    <option value="kjottOgFisk">Kjøtt Og Fisk</option>
+    <option value="familiekasse">Familiekasse</option>
+</select>
+
+
+<select id="matkasseMengde">
+    <option value="ento">En til to personer</option>
+    <option value="trefire">Tre til fire personer</option>
+</select>
+
+<br>
+<br>
+<input type="text" id="fornavn" placeholder="Ditt fornavn"> <br>
+<input type="text" id="etternavn" placeholder="Ditt etternavn"> <br>
+<input type="text" id="gatenavn" placeholder="Gatenavn"> <br>
+<input type="text" id="gatenummer" placeholder="Gatenummer"> <br>
+<input type="text" id="postnummer" placeholder="Postnummer"> <br>
+<input type="text" id="sted" placeholder="Sted"> <br>
+<input type="text" id="tlf" placeholder="Telefon"> <br>
+
+<script>
+
+localStorage.setItem("fornavn", "Do");
+document.getElementById("fornavn").innerHTML = localStorage.getItem("fornavn");
+</script>
